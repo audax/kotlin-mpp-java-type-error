@@ -9,12 +9,8 @@ repositories {
 }
 
 kotlin {
-    jvm {
-        withJava()
-    }
-    js(IR) {
-        nodejs()
-    }
+    jvm()
+    js(IR)
     sourceSets {
         val commonMain by getting {
             dependencies {
